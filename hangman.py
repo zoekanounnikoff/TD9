@@ -7,3 +7,5 @@ def get_guessed_word(secret_word, letters_guessed):
             mot += '*'
     return mot 
 
+def check_guessed_word(secret_word, letters_guessed):
+    return secret_word == get_guessed_word(secret_word, letters_guessed)
