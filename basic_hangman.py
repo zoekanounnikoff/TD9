@@ -31,7 +31,7 @@ def compare(a,b):
     return (x == len(a))
 
 def guesses(char, word, tries):
-    if char in word:
+    if not (char in word):
         tries -= 1
     return(tries)
 
